@@ -203,6 +203,17 @@
     .row1{
       margin-top:1rem;
     }
+    .btndiv{
+      display: flex;
+    }
+    .btndiv #btnmirror{
+      background-color: #000000;margin-left:1.5rem;padding: .5rem 2rem;
+    }
+    .btndiv #btnmirror2{
+      background-color: white;margin-left:.5rem;padding: .5rem 2rem;border: 1px solid black;
+    }
+    
+
 /* CSS FOR THE SLIDER CERTIFICATE END */
 
   @media screen and (min-width:200px) and (max-width:700px) {
@@ -210,6 +221,17 @@
       justify-content: center;
     margin-left: calc(-0.5* var(--bs-gutter-x));
   }
+  .btndiv #btnmirror {
+    background-color: #000000;
+    margin-left: 1.1rem;
+    padding: 5px 11px;
+}
+.btndiv #btnmirror2 {
+    background-color: white;
+    margin-left: .5rem;
+    padding: 5px 11px;
+    border: 1px solid black;
+}
   .passionate{
       margin-left: 1.1rem;
     }
@@ -334,9 +356,11 @@
                     <!-- <p style="margin-bottom: 0rem!important" class="text-white fs-2 ps-4 css-text-shadow-custom" id="typing-container"></p> -->
                      <p class="passionate css-text-shadow-custom">A passionate Web developer creating responsive Website <br> and building applications providing Innovative design.</p>
                      <p class="aspiring css-text-shadow-custom">Aspiring Web Developer from Calumpit Bulacan, Philippines.</p>
-                     <a href="Resume/Patrick_Resume-converted (2).docx" id="btnmirror" style="background-color: #000000;margin-left:1.5rem;padding: .5rem 2rem;" class="btn mt-4 text-white" data-mdb-ripple-color="dark">Download CV   <i class="fa-solid fa-angle-right"></i></a> 
-                     <a href="#contact" id="btnmirror2" style="background-color: white;margin-left:.5rem;padding: .5rem 2rem;border: 1px solid black;" class="btn mt-4 text-black">Conatct Us   <i class="fa-solid fa-angle-right"></i></a>    
-   
+                     <div class="btndiv">
+                      <a href="Resume/Patrick_Resume-converted (2).docx" id="btnmirror" class="btn mt-4 text-white" data-mdb-ripple-color="dark">Download CV   <i class="fa-solid fa-angle-right"></i></a> 
+                      <a href="#contact" id="btnmirror2" class="btn mt-4 text-black">Conatct Us   <i class="fa-solid fa-angle-right"></i></a>     
+                     </div>
+                    
                 </div>
                </div>
              </section>
