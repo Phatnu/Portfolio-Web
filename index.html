@@ -1,0 +1,2081 @@
+
+<!DOCTYPE html>
+
+<!-- =========================================================
+* Sneat - Bootstrap 5 HTML Admin Template - Pro | v1.0.0
+==============================================================
+
+* Product Page: https://themeselection.com/products/sneat-bootstrap-html-admin-template/
+* Created by: ThemeSelection
+* License: You must have a valid license purchased in order to legally use the theme for your project.
+* Copyright ThemeSelection (https://themeselection.com)
+
+=========================================================
+ -->
+<!-- beautify ignore:start -->
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Portfolio | Patrick R. Cuetso</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="image/patsss2.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!--<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">-->
+    <!-- Icons. Uncomment required icon fonts -->
+    <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+    <link rel="stylesheet" href="assets/css/css-custom.css"/>
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+
+    <!-- Page CSS -->
+
+     <!-- <%-- FOR SLIDING IMAGE CERTIFICATE START--%> -->
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <!-- <%-- FOR SLIDING IMAGE CERTIFICATE CLOSE--%> -->
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+    <style>
+      #contact {
+    background-image: url('./image/bgmap.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    padding: 60px 0; /* Adjusts padding to create space around content */
+    color: #fff; /* Optional: changes text color to white for better readability */
+    background-attachment: fixed;
+}
+
+      #cardsss:hover {
+        transform: translateY(-10px);
+        transition: 0.8s; /* Moves the div upwards */
+        border: 1px solid black;
+        
+      }
+      #cardsss {
+      transition: transform 0.8s ease;
+      padding: .5rem;
+      border-radius: 11px;
+      background: #e0e0e0;
+      box-shadow:  8px 8px 16px #bebebe,-8px -8px 16px #ffffff; /* Apply transition to both hover and unhover */
+    }
+  .rowform{
+    --bs-gutter-x: 1.625rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-0.5* var(--bs-gutter-x));
+  }
+  #formatlimg{
+    width: 90%;
+  }
+  /* CSS FOR THE SLIDER CERTIFICATE START */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Close button styling */
+.modal-close-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+    .modal-close-btn:hover,
+    .modal-close-btn:focus {
+        background-color: #bbb;
+        color: white;
+    }
+    .passionate{
+      margin-left: 1.5rem;margin-bottom: .5rem!important;font-size: 20px;line-height: 25px;color: black;
+    }
+    .aspiring{
+      margin-left: 1.5rem;margin-bottom: 0rem!important;font-size: 12px;color: black;
+    }
+    .homebg{
+     background-image: url('image/bg9.jpg');padding: 2rem;background-attachment: fixed;
+    }
+    .row1{
+      margin-top:1rem;
+    }
+/* CSS FOR THE SLIDER CERTIFICATE END */
+
+  @media screen and (min-width:200px) and (max-width:700px) {
+    .rowform{
+      justify-content: center;
+    margin-left: calc(-0.5* var(--bs-gutter-x));
+  }
+  .passionate{
+      margin-left: 1.1rem;
+    }
+    .row1{
+      margin-top:0rem;
+    }
+    .aspiring{
+      margin-left: 1.1rem;
+    }
+    .homebg{
+     background-image: url('image/mobile4.jpg');padding: 2rem;background-attachment: fixed;
+    }
+  #formatlimg{
+    width: 40%;
+  }
+  }
+    </style>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu custom-bg">
+          <div class="app-brand">
+            <img style="width: 60%" class="img-thumbnail avatar avatar-xl rounded-circle mx-auto mb-2 mt-4 h-auto border-5 border-secondary" 
+            src="image/pormal2.jpg"> 
+            
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none bg-secondary">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+          <div>
+          </div>
+
+          <div class="fs-4 fw-semibold text-center text-white mb-1">Patrick R. Cueto</div>
+          <p class="text-center text-white mb-0">Web Developer</p>
+          <div class="demo-inline-spacing text-center pt-0 mb-2">
+            <span class="badge css-bg-iconlist rounded-circle"><a target="_blank" href="https://www.facebook.com/"><i class='bx bxl-facebook bx-sm css-icon-custom '></i></a></span>
+            <span class="badge css-bg-iconlist rounded-circle"><a target="_blank" href="https://www.instagram.com/patrickcueto019/"><i class='bx bxl-instagram bx-sm css-icon-custom '></i></a></span>
+            <span class="badge css-bg-iconlist rounded-circle"><a target="_blank" href="https://www.tiktok.com/@_patrickregalado"><i class='bx bxl-tiktok bx-sm css-icon-custom '></i></a></span>
+          </div>
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboard -->
+            <li class="menu-item">
+              <a href="#home" class="menu-link">
+                <div class="d-flex justify-content-center">
+                  <i class="menu-icon tf-icons bx bx-home-circle text-secondary css-icon-custom"></i> <h5 class="css-text-aside">Homepage</h5>
+              </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#about" class="menu-link">
+                <div class="d-flex justify-content-center">
+                  <i class="menu-icon tf-icons bx bxs-user text-secondary css-icon-custom"></i> <h5 class="css-text-aside">About</h5>
+              </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#resume" class="menu-link">
+                <div class="d-flex justify-content-center">
+                  <i class="menu-icon tf-icons bx bx-file text-secondary css-icon-custom"></i> <h5 class="css-text-aside">Resume</h5>
+              </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#skills" class="menu-link">
+                <div class="d-flex justify-content-center">
+                  <i class="menu-icon tf-icons bx bx-image-alt text-secondary css-icon-custom"></i> <h5 class="css-text-aside">Skills</h5>
+              </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#project" class="menu-link">
+                <div class="d-flex justify-content-center">
+               <i class="menu-icon tf-icons bx bx-notepad text-secondary css-icon-custom"></i> <h5 class="css-text-aside">Projects</h5>
+              </div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#contact" class="menu-link">
+                <div class="d-flex justify-content-center">
+               <i class="menu-icon tf-icons bx bxs-contact css-icon-custom"></i> <h5 class="css-text-aside">Contact</h5>
+              </div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav class="navbar d-xl-none" style="position: sticky; top: 0;">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center ms-auto me-3 me-xl-0 d-xl-none ms-4">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <div class="p-1 rounded-circle" style="background-color: #000000;">
+                  <i class="bx bx-menu bx-sm text-white "></i>
+                </div>
+              </a>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+          <!-- Banner section -->
+             <section id="home">
+              <div class="homebg css-image-bg-fullscreen align-content-center">
+                <div data-aos="fade-up" data-aos-easing="linear"
+                data-aos-duration="3000">
+                  <h6 style="font-size: clamp(2.25rem, 0.6875rem + 5vw, 3.5rem);margin-bottom: 0px!important;color: black;" class="fw-bold ps-3 css-text-shadow-custom">Patrick Cueto Regalado</h5>
+                    <!-- <p style="margin-bottom: 0rem!important" class="text-white fs-2 ps-4 css-text-shadow-custom" id="typing-container"></p> -->
+                     <p class="passionate css-text-shadow-custom">A passionate Web developer creating responsive Website <br> and building applications providing Innovative design.</p>
+                     <p class="aspiring css-text-shadow-custom">Aspiring Web Developer from Calumpit Bulacan, Philippines.</p>
+                     <a href="Resume/Patrick_Resume-converted (2).docx" id="btnmirror" style="background-color: #000000;margin-left:1.5rem;padding: .5rem 2rem;" class="btn mt-4 text-white" data-mdb-ripple-color="dark">Download CV   <i class="fa-solid fa-angle-right"></i></a> 
+                     <a href="#contact" id="btnmirror2" style="background-color: white;margin-left:.5rem;padding: .5rem 2rem;border: 1px solid black;" class="btn mt-4 text-black">Conatct Us   <i class="fa-solid fa-angle-right"></i></a>    
+   
+                </div>
+               </div>
+             </section>
+             <!-- /Banner section -->
+             
+          <!-- About section -->
+             <section id="about" class="pt-4">
+              <div class="container-fluid">
+              <h3 class="title fw-bold text-black">About</h3>
+              <hr class="css-hr-custom"/>
+                <p>I see myself in the future working in a well known successfull company that will help me to procure an expirience and obtaine knowledge not only in programming but also as a professional in the field of IT industry.
+
+                  I choose to study front end developer because of my interest in computer systems from an early age. Using logic to fulfil different application requirements is a challenge I always liked. I have been looking for a career opportunity where I can use my skills to contribute to real-time projects and gain professional experience as a frontend developer or software engineer..</p>
+                   <div class="row pt-4 gy-4 pb-5">
+                    <div data-aos="fade-up"
+                    data-aos-duration="3000" class="col-lg-4" style="display: flex;justify-content: center;">
+                      <img id="formalimg" src="image/pormal2.jpg" alt="column image">
+                    </div>
+                    <div class="col-lg-8">
+                      <h3>IS Student | Aspiring Bot Developer</h3>
+                      <!-- <h3>WordPress & ASP.Net Web Developer</h3> -->
+                      <p>As a WordPress & ASP.NET Web Developer, I specialize in crafting innovative web solutions tailored to meet client needs. With extensive experience using the WordPress Divi Builder, I create visually appealing, responsive, and user-friendly designs that empower businesses to showcase their brand effectively. My expertise also includes developing dynamic web applications using ASP.NET, ensuring seamless functionality and top-notch performance. With a keen eye for detail and a strong commitment to excellence, I strive to deliver high-quality results on every project.</p>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-5 fw-semibold me-3 text-black">Birthday:</span></li>
+                              <li><span class="fs-5">July 19, 1999</span></li>
+                            </ul>
+                            <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-big fw-semibold me-3 text-black">Website:</span></li>
+                              <li><span class="fs-big "><a target="_blank" href="https://github.com/Phatnu">https://github.com/Phatnu</a></span></li>
+                            </ul>
+                            <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-big fw-semibold me-3 text-black">Phone:</span></li>
+                              <li><span class="fs-big ">0936-496-7582</span></li>
+                            </ul>
+                            <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-big fw-semibold me-3 text-black">City:</span></li>
+                              <li><span class="fs-big ">Calumpit, Bulacan</span></li>
+                            </ul>
+                          </div>
+                          <div class="col-lg-6">
+                            <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-big fw-semibold me-3 text-black">Specialization:</span></li>
+                              <li><span class="fs-big ">Web Development</span></li>
+                            </ul>
+                            <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-big  fw-semibold me-3 text-black">Degree:</span></li>
+                              <li><span class="fs-big ">BS Information System</span></li>
+                            </ul>
+                            <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-big  fw-semibold me-3 text-black">Email:</span></li>
+                              <li><span class="fs-big ">cuetopatrick91@gmail.com</span></li>
+                            </ul>
+                            <!--- <ul class="list-unstyled d-flex align-items-center">
+                              <li><i class="bx bx-chevron-right bx-md css-chevron-color"></i></li>
+                              <li><span class="fs-big  fw-semibold me-3 text-black">Birthday:</span></li>
+                              <li><span class="fs-big ">November 22, 1999</span></li>
+                            </ul> -->
+                          </div>
+                        </div>
+
+                    </div>
+                  </div>
+              </div>
+             </section>
+             <section id="skills" class="pt-4">
+              <div class="bg-lighter pt-3 pb-3">
+                <div class="container">
+                  <h3 class="title fw-bold text-black">Skills</h3>
+                  <hr class="css-hr-custom"/>
+                  <p class="mb-5">"I am proficient in a variety of tools and technologies that enable me to build and design engaging, functional websites and digital content. My technical skills include HTML, CSS, JavaScript, and ASP.NET with C#, along with expertise in database management using MSSQL. For web design, I use WordPress with Divi Builder to create customized and responsive layouts. Additionally, I bring creativity to my projects through graphic design tools like Photoshop and Canva, and video editing with CapCut, ensuring well-rounded, visually appealing, and user-friendly results."</p>
+                  <!-- SECTION FOR THE SKILLS ICON START -->
+                  <div class="row" data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                        <div id="cardsss">
+                          <div style="display: flex;align-items: center;justify-content: center;">
+                            <div>
+                                <img style="width: 70px;height: auto;" src="/skillicons/html.png">
+                            </div>
+                            <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                                HTML
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                      <div id="cardsss">
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                          <div>
+                              <img style="width: 70px;height: auto;" src="/skillicons/CSS.png">
+                          </div>
+                          <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                              CSS
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/jscript.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                            JAVASCRIPT
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              <div class="col-lg-3 col-md-3 col-sm-12">
+                <div id="cardsss">
+                  <div style="display: flex;align-items: center;justify-content: center;">
+                    <div>
+                        <img style="width: 70px;height: auto;" src="/skillicons/Bootstrap.png">
+                    </div>
+                    <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                        BOOTSTRAP
+                    </div>
+                  </div>
+                </div>
+            </div>
+                   </div>
+                   <div class="row row1" data-aos="fade-up"
+                   data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                      <div id="cardsss">
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                          <div>
+                              <img style="width: 70px;height: auto;" src="/skillicons/tailwind.png">
+                          </div>
+                          <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                              TAILWIND
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/CSHARP.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                            C#
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/ASP.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                            ASP.NET
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <div id="cardsss">
+                    <div style="display: flex;align-items: center;justify-content: center;">
+                      <div>
+                          <img style="width: 70px;height: auto;" src="/skillicons/SQL.png">
+                      </div>
+                      <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                          SQL
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                   </div>
+                   <div class="row row1" data-aos="fade-up"
+                   data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                      <div id="cardsss">
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                          <div>
+                              <img style="width: 70px;height: auto;" src="/skillicons/WORDPRESS.png">
+                          </div>
+                          <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                              WORDPRESS
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/phothoshop.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                            PHOTOSHOP
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/FIGMA.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                            FIGMA
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <div id="cardsss">
+                    <div style="display: flex;align-items: center;justify-content: center;">
+                      <div>
+                          <img style="width: 70px;height: auto;" src="/skillicons/capcut.png">
+                      </div>
+                      <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                          CAPCUT
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                   </div>
+                   <div class="row row1" data-aos="fade-up"
+                   data-aos-anchor-placement="center-bottom" data-aos-duration="2000" >
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                      <div id="cardsss">
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                          <div>
+                              <img style="width: 70px;height: auto;" src="/skillicons/CANVA.png">
+                          </div>
+                          <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                             CANVA
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/visualStudio.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 18px;font-weight: bold;">
+                            VISUAL STUDIO
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/chatgpt.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                            GPT
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <div id="cardsss">
+                    <div style="display: flex;align-items: center;justify-content: center;">
+                      <div>
+                          <img style="width: 70px;height: auto;" src="/skillicons/skype.png">
+                      </div>
+                      <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                          SKYPE
+                      </div>
+                    </div>
+                  </div>
+              </div>
+                   </div>
+                   <div class="row row1" data-aos="fade-up"
+                   data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div class="col-lg-3 col-md-3 col-sm-12">
+                      <div id="cardsss">
+                        <div style="display: flex;align-items: center;justify-content: center;">
+                          <div>
+                              <img style="width: 70px;height: auto;" src="/skillicons/trello.png">
+                          </div>
+                          <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                             TRELLO
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/drive.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 18px;font-weight: bold;">
+                            DRIVE
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                  <!-- <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div id="cardsss">
+                      <div style="display: flex;align-items: center;justify-content: center;">
+                        <div>
+                            <img style="width: 70px;height: auto;" src="/skillicons/chatgpt.png">
+                        </div>
+                        <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                            GPT
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                  <div id="cardsss">
+                    <div style="display: flex;align-items: center;justify-content: center;">
+                      <div>
+                          <img style="width: 70px;height: auto;" src="/skillicons/skype.png">
+                      </div>
+                      <div style="color: #040B14;font-size: 20px;font-weight: bold;">
+                          SKYPE
+                      </div>
+                    </div>
+                  </div>
+              </div> -->
+                   </div>
+
+                   <!-- SECTION FOR THE SKILLS ICON END -->
+
+
+                  <div class="row text-center align-items-center pt-5 pb-5">
+                  <div class="col-lg-6 p-3">
+                        <div class="row pt-3 pb-3 g-1 text-center align-items-center">
+                          <div class="col-6">
+                            <i style="font-size: 100px;" class="bx bx-notepad  float-end"></i>
+                          </div>
+                          <div class="col-6" style="border-left: 4px solid #000000;"> 
+                            <div class="d-flex align-items-center">
+                            <span style="font-size: 50px;">10 </span><p class="fs-3"> Projects</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-6 p-3">
+                        <div class="row pt-3 pb-3 g-1 text-center align-items-center">
+                          <div class="col-6">
+                            <i style="font-size: 100px;" class="bx bx-user float-end"></i>
+                          </div>
+                          <div class="col-6" style="border-left: 4px solid #000000;"> 
+                            <div class="d-flex align-items-center">
+                            <span style="font-size: 50px;">10 </span><p class="fs-3"> Clients</p>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+             </section>
+             
+             <!-- Resume Section -->
+             <section id="resume" class="pt-4">
+              <div class="container">
+                <h3 class="title fw-bold text-black">Resume</h3>
+                <hr class="css-hr-custom"/>
+                <p class="mb-5">A highly motivated Web Developer with experience in front-end and back-end development, specializing in creating user-friendly and responsive websites. Passionate about leveraging modern technologies to deliver creative and efficient solutions.</p>
+                   <div class="row">
+                    <div class="col-lg-6 shadow-0">
+                      
+                      <!--Summary-->
+                      <h3 class="fw-bold text-black">Summary</h3>
+                      <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                       resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                        <div class="card-header pt-0 pb-0">
+                          <h4 class="text-uppercase">Cueto Patrick R.</h4>
+                        </div>
+                        <div class="card-body pb-0  shadow-0">
+                          <p class="fst-italic">I am an experienced WordPress Developer with a strong background in web design, graphic layout, and project management. Dedicated to delivering high-quality solutions that meet client needs while adhering to tight deadlines. Skilled in team leadership and innovative problem-solving.</p>
+                             <ul>
+                              <li>Philippines</li>
+                              <li>09364967582</li>
+                              <li>cuetop175@gmail.com</li>
+                             </ul>
+                        </div>
+                      </div> 
+                      <!--Education-->
+                      <h3 class=" fw-bold text-black">Education</h3>
+                      <div style="box-shadow: none;" class="card shadow-0 bg-transparent resume-border-left rounded-0 ps-0">
+                        <div class="card-header pt-0 pb-0">
+                          <h4 class="text-uppercase">Associate in Computer Technology</h4>
+                          <h6>2019 - 2021</h6>
+                        </div>
+                        <div class="card-body">
+                          <p class="fst-italic">Bulacan Polytechnic College Malolos Campus</p>
+                          <p>Earned a certification in PC Assembly and Maintenance while learning to diagnose and repair hardware and software issues. Assisted in maintaining the campus computer labs as part of a volunteer IT team</p>
+                        </div>
+                      </div> 
+                      <div style="box-shadow: none;" class="card shadow-0 bg-transparent resume-border-left rounded-0 ps-0">
+                        <div class="card-header pt-0 pb-0">
+                          <h4 class="text-uppercase">Bachelor Science in Information Systems</h4>
+                          <h6>2021 - 2023</h6>
+                        </div>
+                        <div class="card-body">
+                          <p class="fst-italic">Bulacan Polytechnic College Malolos Campus</p>
+                          <p>Developed expertise in system design and business process modeling, with an emphasis on improving organizational efficiency through technology. Presented a research paper on 'AI Integration in Information Systems' at the university tech symposium.  </p>
+                        </div>
+                      </div> 
+                    </div>
+
+                    <div class="col-lg-6 shadow-0">
+                      
+                      <!--Professional Experience-->
+                      <h3 class="fw-bold text-black">Professional Experience</h3>
+                      <div style="box-shadow: none;" class="card shadow-0 bg-transparent resume-border-left rounded-0 ps-0">
+                        <div class="card-header pt-0 pb-0">
+                          <h4 class="text-uppercase">WordPress Developer</h4>
+                          <h6>2024 - Present</h6>
+                        </div>
+                        <div class="card-body">
+                          <p class="fst-italic">Laresidencia Subdivision, San Marcos Calumpit Bulacan</p>
+                          <ul>
+                            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                            <!-- <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li> -->
+                          </ul>
+                        </div>
+                      </div> 
+                      <div style="box-shadow: none;" class="card shadow-0 bg-transparent resume-border-left rounded-0 ps-0">
+                        <div class="card-header pt-0 pb-0">
+                          <h4 class="text-uppercase">Technical Education and Skills Development Authority</h4>
+                          <h6>2022 - 2023</h6>
+                        </div>
+                        <div class="card-body">
+                          <p class="fst-italic">RSDC Compound, Tabang, Guiguinto, Bulacan.</p>
+                          <ul>
+                            <li>Proficient in document printing and management.</li>
+                            <li>Skilled in inputting and organizing student data accurately.</li>
+                            <li>Knowledgeable in developing front-end systems for streamlined operations.</li>
+                          </ul>
+                        </div>
+                      </div> 
+                    </div>
+                   </div>
+              </div>
+             </section>
+             
+             <div class="container mt-5">
+              <h3 class="title fw-bold text-black">Certificates</h3>
+              <hr class="css-hr-custom"/>
+             <div style="display: flex;align-items: center;justify-content: center;">
+              <div class="main-carousel" style="text-align: center;justify-content: space-between;width: 80rem;">
+                   <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/JsEssential1.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                    <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/Completion.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                                            <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/HtmlUdemyCertificate.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                  <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/Css.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                     <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/Responsive.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                     <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/AndroidApp.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                  <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/Certificate%20June%2030%202021%20(1).PNG" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                                          <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/Html.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                                                                  <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/CssHtmlBootstrapPython.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+
+
+                      <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/img1.png" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                     <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/img2.png" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                     <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/img3.png" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                       <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="certificate/280439030_679747499921392_4656070488231082717_n%20(2).png" src="certificate/Certificate%20December%2015%202020%20(1).PNG" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                                                     <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/Jsessential2.jpg" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                                </div>
+                  </div>
+                     <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/img4.png" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                     </div>
+                  </div>
+                     <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="float-img1" src="certificate/img5.png" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                     </div>
+                  </div>
+                    <div class="cell">
+                      <div style="display:flex;align-items:center;justify-content:center;padding:9rem;width:20rem;padding-top:1rem;padding-bottom:1rem;height:auto">
+                          <p style="color:black"><img class="certificate/196889597_781640342712623_5438020699476563819_n%20(1).png" src="certificate/Certificate%20December%2015%202020%20(1).PNG" alt="Pineapple" style="width:270px;height:200px;margin-right:15px;border: 3px solid black;" onclick="openModal(this.src)"/></p> 
+                     </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+        <!-- Modal structure FOR IMAGE SLIDER START -->
+        <div id="myModal" class="modal">
+          <span class="close" onclick="closeModal(event)">&times;</span>
+          <img class="modal-content" id="img01"/>
+          <div id="caption"></div>
+          <button class="modal-close-btn" onclick="closeModal(event)">Close</button>
+        </div>
+        <!-- Modal structure FOR IMAGE SLIDER END -->
+
+
+
+
+
+
+             <!-- PROJECT SECTION START -->
+             <section id="project" class="pt-4">
+              <div class="container">
+                <h3 class="title fw-bold text-black">Projects</h3>
+                <hr class="css-hr-custom"/>
+                <p>Explore a diverse range of projects showcasing innovative solutions in web development, video production, and graphic design, each tailored to deliver exceptional performance and user experience.</p>
+                   <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="true">WEB PROJECTS</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">VIDEO PROJECTS</button>
+                        <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">GRAPHICS PROJECTS</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- WEB PROJECTS START -->
+                    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                        <div class="row mb-4 g-2 pt-4">
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/scholarship/Scholarship Management.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight1" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/CoffeeShop/CoffeeShop.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvascensus" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/Census/PSDSETUP.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4 g-2 pt-3">
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#constructionword" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/Construction/Construction.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvascons2" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/Construction_two/CONSTRUCTON.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight5" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/Boxing/Boxing.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="row mb-4 g-2 pt-3">
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#educationtab" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/Education/frontside.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                 
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#industrial" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/Industrial/Frontsidein.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                               
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#weatherapp" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="image/Weatherapp/Weatherapp.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FACEBOOK -->
+                        <div class="row mb-4 g-2 pt-3">
+                          <div class="col-lg-4">
+                              <div class="img-custom-transform">
+                                  <a href="#" data-bs-toggle="offcanvas" data-bs-target="#facebook" aria-controls="offcanvasRight">
+                                      <img class="img-fluid img-thumbnail" src="image/Facebook/FACEBOOKfront.jpg" alt="">
+                                  </a>
+                              </div>
+                          </div>
+                          <!-- <div class="col-lg-4">
+                              <div class="img-custom-transform">
+                               
+                                  <a href="#" data-bs-toggle="offcanvas" data-bs-target="#industrial" aria-controls="offcanvasRight">
+                                      <img class="img-fluid img-thumbnail" src="image/Industrial/Frontsidein.jpg" alt="">
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="col-lg-4">
+                              <div class="img-custom-transform">
+                             
+                                  <a href="#" data-bs-toggle="offcanvas" data-bs-target="#weatherapp" aria-controls="offcanvasRight">
+                                      <img class="img-fluid img-thumbnail" src="image/Weatherapp/Weatherapp.jpg" alt="">
+                                  </a>
+                              </div>
+                          </div> -->
+                      </div>
+                    </div>
+                    <!-- WEB PROJECTS END -->
+                
+                    <!-- VIDEO PROJECTS START -->
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                      <div class="row mb-4 g-2 pt-4">
+                        <div class="col-lg-4">
+                          <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                            <!-- Video -->
+                            <div class="ratio ratio-16x9">
+                              <video class="card-img-top" controls>
+                                <source src="videos/vid1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
+                            <!-- Title -->
+                            <div class="card-body text-center" style="background-color: #f5f5f5;">
+                              <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                                Text To Speech
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      
+                        <div class="col-lg-4">
+                          <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                            <!-- Video -->
+                            <div class="ratio ratio-16x9">
+                              <video class="card-img-top" controls>
+                                <source src="videos/vid2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
+                            <!-- Title -->
+                            <div class="card-body text-center" style="background-color: #f5f5f5;">
+                              <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                                Text Reveal Behind Moving Subject
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                            <!-- Video -->
+                            <div class="ratio ratio-16x9">
+                              <video class="card-img-top" controls>
+                                <source src="videos/vid3.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                              </video>
+                            </div>
+                            <!-- Title -->
+                            <div class="card-body text-center" style="background-color: #f5f5f5;">
+                              <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                                Freeze Frame Character Intro
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row mb-4 g-2 pt-3">
+                      <div class="col-lg-4">
+                        <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                          <!-- Video -->
+                          <div class="ratio ratio-16x9">
+                            <video class="card-img-top" controls>
+                              <source src="videos/vid4.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <!-- Title -->
+                          <div class="card-body text-center" style="background-color: #f5f5f5;">
+                            <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                              Zoom in Zoom out Effects
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                          <!-- Video -->
+                          <div class="ratio ratio-16x9">
+                            <video class="card-img-top" controls>
+                              <source src="videos/vid5.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <!-- Title -->
+                          <div class="card-body text-center" style="background-color: #f5f5f5;">
+                            <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                              Blur Video Background
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                          <!-- Video -->
+                          <div class="ratio ratio-16x9">
+                            <video class="card-img-top" controls>
+                              <source src="videos/vid6.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <!-- Title -->
+                          <div class="card-body text-center" style="background-color: #f5f5f5;">
+                            <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                            Split Screen Effect
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4 g-2 pt-3">
+                      <div class="col-lg-4">
+                        <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                          <!-- Video -->
+                          <div class="ratio ratio-16x9">
+                            <video class="card-img-top" controls>
+                              <source src="videos/vid7.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <!-- Title -->
+                          <div class="card-body text-center" style="background-color: #f5f5f5;">
+                            <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                              Cinematic Text Revealing
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                          <!-- Video -->
+                          <div class="ratio ratio-16x9">
+                            <video class="card-img-top" controls>
+                              <source src="videos/vid9.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <!-- Title -->
+                          <div class="card-body text-center" style="background-color: #f5f5f5;">
+                            <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                              Cinematic Video Effects
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                <!-- IF EVER NA MAGDADAGDAG PA NG ISA DITO START -->
+                <!-- <div class="col-lg-4">
+                  <div class="video-custom-transform">
+                      <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                          <video class="img-fluid img-thumbnail" controls>
+                              <source src="videos/vid9.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                          </video>
+                      </a>
+                  </div>
+              </div> -->
+                <!-- IF EVER NA MAGDADAGDAG PA NG ISA DITO END -->
+                    </div>
+                    <div class="row mb-4 g-2 pt-3">
+                      <div class="col-lg-4">
+                        <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                          <!-- Video -->
+                          <div class="ratio ratio-16x9">
+                            <video class="card-img-top" controls>
+                              <source src="videos/vid10.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <!-- Title -->
+                          <div class="card-body text-center" style="background-color: #f5f5f5;">
+                            <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                           Video Content
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4">
+                        <div class="card shadow-sm border-0" style="border-radius: 5px; overflow: hidden;">
+                          <!-- Video -->
+                          <div class="ratio ratio-16x9">
+                            <video class="card-img-top" controls>
+                              <source src="videos/vid8.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                          </div>
+                          <!-- Title -->
+                          <div class="card-body text-center" style="background-color: #f5f5f5;">
+                            <p class="card-title mb-0" style="font-size: 1.2rem; font-weight: 600; color: #333;">
+                              Text To Speech
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <!-- VIDEO PROJECTS END -->
+                
+                    <!-- IMAGE PROJECTS START -->
+                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                        <div class="row mb-4 g-2 pt-4">
+                          <div class="row mb-4 g-2 pt-3">
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasformenshirtcolor" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="graphics/Menchangecolor/sampleImage.gif" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasformanhirtcolor" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="graphics/Menchangecolor/menchangecolor.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offwebfront" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="graphics/Menchangecolor/CoffeeShop.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row mb-4 g-2 pt-4">
+                          <div class="row mb-4 g-2 pt-3">
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#bsutab" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="graphics/bsuShirtUpdated1.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="img-custom-transform">
+                                    <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offbusinesscard" aria-controls="offcanvasRight">
+                                        <img class="img-fluid img-thumbnail" src="graphics/Menchangecolor/business_card_jeanne.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="col-lg-4">
+                              <div class="img-custom-transform">
+                                  <a href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasformanhirtcolor" aria-controls="offcanvasRight">
+                                      <img class="img-fluid img-thumbnail" src="graphics/Menchangecolor/menchangecolor.jpg" alt="">
+                                  </a>
+                              </div>
+                          </div> -->
+                        </div>
+                        </div>
+                    </div>
+                    <!-- IMAGE PROJECTS END -->
+                </div>
+              
+                  <!--offcanva image1-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">Scholarship System</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">
+                          A Scholarship System Website is a platform designed to manage and streamline scholarship-related processes for organizations, universities, or government programs. Here’s a breakdown of what it typically includes, its functionality, and how it works
+                         </p>
+                            <ul>
+                             <li>Platform: ASP.Net Web Application</li>
+                             <li>Programming Language: C#</li>
+                             <li>Framework: Bootstrap</li>
+                             <li>Database: Microsoft SQL Server</li>
+                            </ul>
+                       </div>
+                     </div>
+                     <img class="img-fluid mb-3" src="image/scholarship/Login.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/contact.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/Landingpage.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/dashboard.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/Announcement.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/anounce_post.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/all_scholar.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/Add_barangay.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/archived.png" alt=""> 
+                     <img class="img-fluid mb-3" src="image/scholarship/scholarship.png" alt=""> 
+                    </div>
+                  </div>
+    
+                  <!--offcanva image2-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight1" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">Coffee Shop POS system</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">A Coffee Shop POS (Point of Sale) System is a software solution designed to handle transactions, manage orders, and streamline operations in a coffee shop. If you’re developing one using ASP.NET C# with SQL Server (MSSQL) as the backend, here’s an overview
+                         </p>
+                            <ul>
+                              <li>Platform: ASP.Net Web Application</li>
+                              <li>Programming Language: C#</li>
+                              <li>Framework: Bootstrap</li>
+                              <li>Database: Microsoft SQL Server</li>
+                            </ul>
+                       </div>
+                     </div> 
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/Login.png" alt="">
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/register.png" alt="">
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/Dashboard.png" alt="">
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/1Sales.png" alt="">
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/2product_list.png" alt="">
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/3Daily_Sales.png" alt="">
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/4UserList.png" alt="">
+                     <img class="img-fluid mb-3" src="image/CoffeeShop/5addCategory.png" alt="">
+                    </div>
+                  </div>
+    
+
+    
+
+
+
+                  <!-- OFF CANVAS FOR construction website START -->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="constructionword" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">CONSTRUCTION WEBSITE TEMPLATES</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">A construction website built with WordPress and Divi Builder serves as a professional platform for showcasing construction services, projects, and expertise. Divi Builder is a drag-and-drop visual editor that makes designing and managing the website easy without needing advanced coding skills.</p>
+                       </div>
+                       <ul>
+                        <li>Platform: WordPress</li>
+                        <li>Themes: Divi</li>
+                       </ul>
+                     </div> 
+                     <img class="img-fluid mb-3" src="image/Construction/HOMEPAGE.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Construction/SERVICES.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Construction/GALLERY.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Construction/FREEestimate.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Construction/CONTACT.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Construction/FINANCING.png" alt="">
+                    </div>
+                  </div>
+            <!-- OFF CANVAS FOR construction website END -->
+            <!-- OFF CANVAS FOR construction website START -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="educationtab" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel"></h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!--Summary-->
+              <h3 class="fw-bold text-black"></h3>
+              <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+              resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                <div class="card-header pt-0 pb-0">
+                  <h4 class="text-uppercase">EDUCATION WEBSITE TEMPLATES</h4>
+                </div>
+                
+                <div class="card-body pb-0 shadow-0">
+                  <p class="fst-italic"> Explore our education website powered by WordPress and enhanced with the Divi theme, offering engaging courses, valuable resources, and interactive learning experiences for students and educators alike.</p>
+                </div>
+              </div> 
+              <img class="img-fluid mb-3" src="image/Education/Home.png" alt="">
+              <img class="img-fluid mb-3" src="image/Education/About.png" alt="">
+              <img class="img-fluid mb-3" src="image/Education/Blog.png" alt="">
+              <img class="img-fluid mb-3" src="image/Education/Contact.png" alt="">
+              <img class="img-fluid mb-3" src="image/Education/Courses.png" alt="">
+            </div>
+          </div>
+    <!-- OFF CANVAS FOR construction website END -->
+ <!-- OFF CANVAS FOR construction website START -->
+ <div class="offcanvas offcanvas-end" tabindex="-1" id="industrial" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!--Summary-->
+    <h3 class="fw-bold text-black"></h3>
+    <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+    resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+      <div class="card-header pt-0 pb-0">
+        <h4 class="text-uppercase">INDUSTRIAL WEBSITE TEMPLATES</h4>
+      </div>
+      <div class="card-body pb-0 shadow-0">
+        <p class="fst-italic"> Discover our industrial website built with WordPress and the Divi theme, showcasing cutting-edge technologies, innovative solutions, and comprehensive services for businesses in the manufacturing and industrial sectors.</p>
+      </div>
+    </div> 
+    <img class="img-fluid mb-3" src="image/Industrial/Home.png" alt="">
+    <img class="img-fluid mb-3" src="image/Industrial/About.png" alt="">
+    <img class="img-fluid mb-3" src="image/Industrial/contact.png" alt="">
+    <img class="img-fluid mb-3" src="image/Industrial/projects.png" alt="">
+    <img class="img-fluid mb-3" src="image/Industrial/services.png" alt="">
+
+  </div>
+</div>
+<!-- OFF CANVAS FOR construction website END -->
+              <!-- OFF CANVAS FOR construction website START -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvascons2" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 id="offcanvasRightLabel"></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <!--Summary-->
+                <h3 class="fw-bold text-black"></h3>
+                <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                  resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                  <div class="card-header pt-0 pb-0">
+                    <h4 class="text-uppercase">CONSTRUCTION WEBSITE TEMPLATES</h4>
+                  </div>
+                  <div class="card-body pb-0 shadow-0">
+                    <p class="fst-italic"> A construction website built with WordPress and Divi Builder serves as a professional platform for showcasing construction services, projects, and expertise. Divi Builder is a drag-and-drop visual editor that makes designing and managing the website easy without needing advanced coding skills.</p>
+                  </div>
+                  <ul>
+                    <li>Platform: WordPress</li>
+                    <li>Themes: Divi</li>
+                   </ul>
+                </div> 
+                <img class="img-fluid mb-3" src="image/Construction_two/HOMEPAGE.png" alt="">
+                <img class="img-fluid mb-3" src="image/Construction_two/ABOUT.png" alt="">
+                <img class="img-fluid mb-3" src="image/Construction_two/CONTACT.png" alt="">
+                <img class="img-fluid mb-3" src="image/Construction_two/PROJECTS.png" alt="">
+                <img class="img-fluid mb-3" src="image/Construction_two/SERVICES.png" alt="">
+  
+                </div>
+              </div>
+              <!-- OFF CANVAS FOR construction website COLOR END -->
+                  <!-- OFF CANVAS FOR MEN CHANGE COLOR START -->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasformenshirtcolor" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">CHANGE COLOR SHIRT FOR WOMEN</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic"> Browse through my graphic portfolio, where I showcase my expertise in using Photoshop to creatively transform and customize t-shirt designs, including changing colors and adding unique elements to create stylish and personalized looks for women.</p>
+                       </div>
+                       <ul>
+                        <li>PHOTOSHOP</li>
+                       </ul>
+                     </div> 
+                     <img class="img-fluid mb-3" src="graphics/Menchangecolor/Image1.jpg" alt="">
+                     <img class="img-fluid mb-3" src="graphics/Menchangecolor/image2.jpg" alt="">
+                     <img class="img-fluid mb-3" src="graphics/Menchangecolor/image3.jpg" alt="">
+                    </div>
+                  </div>
+            <!-- OFF CANVAS FOR MEN CHANGE COLOR END -->
+                  <!-- OFF CANVAS FOR MEN CHANGE COLOR START -->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasformanhirtcolor" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">CHANGE COLOR SHIRT FOR MAN</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic"> Explore my graphic portfolio, where I showcase my skills in Photoshop by changing t-shirt colors for men, including custom requests from past clients, delivering personalized and unique designs tailored to their preferences. </p>
+                         <ul>
+                          <li>PHOTOSHOP</li>
+                         </ul>
+                       </div>
+                     </div> 
+                     <img class="img-fluid mb-3" src="graphics/Menchangecolor/man1colorviolet.jpg" alt="">
+
+                    </div>
+                  </div>
+            <!-- OFF CANVAS FOR MEN CHANGE COLOR END -->
+
+                  <!-- OFF CANVAS FOR BSU POLO SHIRT START -->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="bsutab" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">BSU POLO SHIRT</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic"> Browse through my graphic portfolio, where I showcase my expertise in using Photoshop to creatively transform and customize t-shirt designs, including changing colors and adding unique elements to create stylish and personalized looks for women.</p>
+                       </div>
+                       <ul>
+                        <li>PHOTOSHOP</li>
+                       </ul>
+                     </div> 
+                     <img class="img-fluid mb-3" src="graphics/bsuShirt2.jpg" alt="">
+                     <img class="img-fluid mb-3" src="graphics/bsuShirtUpdated1.jpg" alt="">
+
+                    </div>
+                  </div>
+            <!-- OFF CANVAS FOR BSU POLO SHIRT END -->
+
+
+
+
+
+
+
+
+
+<!-- FACEBOOK -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="facebook" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasRightLabel"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+   <!--Summary-->
+   <h3 class="fw-bold text-black"></h3>
+   <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+    resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+     <div class="card-header pt-0 pb-0">
+       <h4 class="text-uppercase">Facebook Clone Login System</h4>
+     </div>
+     <div class="card-body pb-0 shadow-0">
+       <p class="fst-italic">This project replicates the login functionality of Facebook. Instead of integrating with Facebook's API, the system uses its own database to handle user authentication. Users can log in with their username and password, which are securely stored and verified in the backend.</p>
+       <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>BOOTSTRAP</li>
+        <li>ASP.NET C#</li>
+        <li>MSSQL</li>
+       </ul>
+     </div>
+   </div> 
+   <img class="img-fluid mb-3" src="image/Facebook/FACEBOOKfront.jpg" alt="">
+   <img class="img-fluid mb-3" src="image/Facebook/Facebook desktop.png" alt="">
+  </div>
+</div>
+<!-- FACEBOOK -->
+  <!-- OFF CANVAS FOR WEB FRONT START -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offwebfront" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 id="offcanvasRightLabel"></h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+     <!--Summary-->
+     <h3 class="fw-bold text-black"></h3>
+     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+       <div class="card-header pt-0 pb-0">
+         <h4 class="text-uppercase">WEBSITE DESIGN</h4>
+       </div>
+       <div class="card-body pb-0 shadow-0">
+         <p class="fst-italic">Designed and crafted using Adobe Photoshop, this custom graphic reflects my vision for an engaging and visually appealing website, blending modern design trends with user-friendly aesthetics. The design features a harmonious color palette, dynamic elements, and a responsive layout, ensuring a seamless experience across all devices.</p>
+         <ul>
+          <li>PHOTOSHOP</li>
+         </ul>
+       </div>
+     </div> 
+     <img class="img-fluid mb-3" src="graphics/Menchangecolor/PSDSETUP.jpg" alt="">
+     <img class="img-fluid mb-3" src="graphics/Menchangecolor/CoffeeShop.jpg" alt="">
+     <img class="img-fluid mb-3" src="graphics/Menchangecolor/Scholarship Management.jpg" alt="">
+
+     <img class="img-fluid mb-3" src="image/Boxing/Boxing.jpg" alt="">
+     <img class="img-fluid mb-3" src="image/Construction/Construction.jpg" alt="">
+     <img class="img-fluid mb-3" src="image/Construction_two/CONSTRUCTON.jpg" alt="">
+
+     <img class="img-fluid mb-3" src="image/Education/frontside.jpg" alt="">
+     <img class="img-fluid mb-3" src="image/Industrial/Frontsidein.jpg" alt="">
+
+    </div>
+  </div>
+<!-- OFF CANVAS FOR WEB FRONT END -->
+
+
+
+
+
+
+                  <!-- OFF CANVAS FOR BUSINESS CARD START -->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offbusinesscard" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">BUSINESS CARD FOR COLOMBA</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">School Web Design Template is a static website built with WordPress Divi Theme.</p>
+                         <ul>
+                          <li>Platform: WordPress</li>
+                          <li>Themes: Divi</li>
+                         </ul>
+                       </div>
+                     </div> 
+                     <img class="img-fluid mb-3" src="graphics/Menchangecolor/business_card.jpg" alt="">
+                     <img class="img-fluid mb-3" src="graphics/Menchangecolor/business_card_3.jpg" alt="">
+                     <img class="img-fluid mb-3" src="graphics/Menchangecolor/business_card_jeanne.jpg" alt="">
+                    </div>
+                  </div>
+<!-- OFF CANVAS FOR BUSINESS CARD END -->
+
+                 <!-- OFF CANVAS FOR CENSUS CARD START -->
+                   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvascensus" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">Animal Census System</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">An Animal Census System is a software application designed to collect, manage, and analyze data related to animal populations in a specific area. It can be used for monitoring wildlife, livestock, or pets within a community, sanctuary, or conservation area. The system helps organizations or local authorities keep track of species, population trends, and other relevant data for effective management.</p>
+                         <ul>
+                          <li>Platform: ASP.Net Web Application</li>
+                          <li>Programming Language: C#</li>
+                          <li>Framework: Bootstrap</li>
+                          <li>Database: Microsoft SQL Server</li>
+                         </ul>
+                       </div>
+                     </div> 
+                     <img class="img-fluid mb-3" src="image/Census/1login.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Census/2signup.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Census/3Dashboard.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Census/4ProvincialAd.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Census/5AddUser.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Census/6Addanimals.png" alt="">
+                     <img class="img-fluid mb-3" src="image/Census/7Approveanimals.png" alt="">
+                    </div>
+                  </div>
+              <!-- OFF CANVAS FOR CENSUS CARD END -->
+
+
+
+
+
+
+
+
+
+
+                  <!--offcanva image4-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight3" aria-labelledby="offcanvasRightLabel">
+                   <div class="offcanvas-header">
+                     <h5 id="offcanvasRightLabel"></h5>
+                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                   </div>
+                   <div class="offcanvas-body">
+                    <!--Summary-->
+                    <h3 class="fw-bold text-black"></h3>
+                    <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                     resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                      <div class="card-header pt-0 pb-0">
+                        <h4 class="text-uppercase">Provincial Information Technology Office (PITO) Inventory and Service Management System</h4>
+                      </div>
+                      <div class="card-body pb-0 shadow-0">
+                        <p class="fst-italic"> Inventory and Service Management System is a dynamic website built with ASP.Net Web application. 
+                          This system can establish and provide its clients with direct customer service and technical support from PITO for fast and efficient computer repair
+                        and inventory service processes.</p>
+                        <ul>
+                         <li>Platform: ASP.Net Web Application</li>
+                         <li>Programming Language: C#</li>
+                         <li>Database: Microsoft SQL Server</li>
+                        </ul>
+                      </div>
+                    </div> 
+                    <img class="img-fluid mb-3" src="image/Screenshot (52).png" alt="">
+                    <img class="img-fluid mb-3" src="image/Screenshot (5).png" alt="">
+                   </div>
+                 </div>
+    
+                  <!--offcanva image5-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight4" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">NROTC Record and Monitoring System</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">NROTC Record and Monitoring System is a dynamic website built with ASP.Net web application.</p>
+                         <ul>
+                          <li>Platform: ASP.Net Web Application</li>
+                          <li>Programming Language: C#</li>
+                          <li>Database: Microsoft SQL Server</li>
+                         </ul>
+                       </div>
+                     </div> 
+                     <img class="img-fluid mb-3" src="image/Screenshot (70).png" alt="">
+                     <img class="img-fluid mb-3" src="image/Screenshot (71).png" alt="">
+                    </div>
+                  </div>
+    
+                  <!--offcanva image6-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight5" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">School Web Design Template</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">A boxing education website serves as a comprehensive platform to teach individuals about the fundamentals of boxing, advanced techniques, fitness routines, and the history of the sport. It includes instructional videos, training guides, workout plans, and expert tips for beginners and professionals alike. </p>
+                         <ul>
+                          <li>Platform: WordPress</li>
+                          <li>Themes: Divi</li>
+                         </ul>
+                       </div>
+                     </div> 
+                     <img class="img-fluid mb-3" src="image/screencapture-web-school-design-test-about-2024-09-07-00_04_10.png" alt="">
+                     <img class="img-fluid mb-3" src="image/screencapture-web-school-design-test-blog-2024-09-07-00_06_08.png" alt="">
+                    </div>
+                  </div>
+      
+                  <!--WEATHER APP-->
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="weatherapp" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel"></h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                     <!--Summary-->
+                     <h3 class="fw-bold text-black"></h3>
+                     <div style="box-shadow: none;" class="card shadow-0 bg-transparent
+                      resume-border-left rounded-0 ps-0 pb-0 mb-3 ">
+                       <div class="card-header pt-0 pb-0">
+                         <h4 class="text-uppercase">Weather App</h4>
+                       </div>
+                       <div class="card-body pb-0 shadow-0">
+                         <p class="fst-italic">The Weather Application is a dynamic, user-friendly platform that provides real-time weather updates for any location. Using the OpenWeatherMap API, the application allows users to search for current weather conditions, including temperature, humidity, and forecasts. Built with HTML, CSS, and JavaScript, the application focuses on a responsive and interactive design to enhance the user experience. The project aims to deliver a reliable and visually appealing tool for everyday weather tracking. </p>
+                         <ul>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>JAVASCRIPT</li>
+                          <li>OpenWeatherMap API</li>
+                         </ul>
+                       </div>
+                     </div> 
+                     <img class="img-fluid mb-3" src="image/Weatherapp/Weatherapp.jpg" alt="">
+                     <img class="img-fluid mb-3" src="image/Weatherapp/WeatherApp.png" alt="">
+                    </div>
+                  </div>
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"></div>                    
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+                  </div>
+
+
+
+             </section>
+             <!-- /Portfolio Section -->
+          <!-- Contact Section -->
+             <section id="contact" class="pt-4">
+              <div class="container">
+                <h3 class="title fw-bold" style="color: #566A7F;">Contacts</h3>
+                <hr class="css-hr-custom"/>
+                <p style="color: #566A7F;">We’re here to help! Reach out to us with any questions or feedback, and we’ll get back to you promptly.</p>
+
+                <div class="rowform">
+                  <div class="col-lg-5" style="background: rgba( 255, 255, 255, 0.25 );
+                  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                  backdrop-filter: blur( 4px );
+                  -webkit-backdrop-filter: blur( 4px );
+                  border-radius: 3px;
+                  border: 1px solid rgba( 255, 255, 255, 0.18 );margin-top: 1.2rem;height: 37rem;">
+                    <ul class="list-group" style="margin-top:4rem">
+                      <li class="list-group-item px-3 d-flex justify-content- align-items-center"><i style="color: #566A7F;" class="bx bx-map bx-md custom-icon pe-3 ps-3"></i>
+                      <span><h3 style="font-size: 20px; margin-bottom: 0px;color: #566A7F;"><strong>Address</strong></h3><p style="color: #566A7F;">Purok 7, San Marcos, Calumpit, Bulacan </p></span>
+                      </li>
+                       <li class="list-group-item  px-3 d-flex justify-content- align-items-center mb-3"><i style="color: #566A7F;" class="bx bx-phone bx-md custom-icon pe-3 ps-3"></i>
+                        <span><h3 style="font-size: 20px; margin-bottom: 0px;color: #566A7F;"><strong>Call</strong></h3><a href="tel:09364967582" style="color: #566A7F;">+(63) 936 496 7582</a></span>
+                        </li>
+                        <li class="list-group-item  px-3 d-flex justify-content- align-items-center"><i style="color: #566A7F;" class="bx bx-envelope bx-md custom-icon pe-3 ps-3"></i>
+                         <span><h3 style="font-size: 20px; margin-bottom: 0px;color: #566A7F;"><strong>Email</strong></h3><a href="mailto:cuetopatrick91@gmail.com" style="color: #566A7F;">cuetopatrick91@gmail.com</a></span>
+                         </li>
+                    </ul>
+                    <div style="display: flex;justify-content: center;margin-top: 2rem;">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61690.92035694895!2d120.71723742329107!3d14.899020569413732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339656dd1e64d66f%3A0x7c727c72b9387c6e!2sCalumpit%2C%20Bulacan!5e0!3m2!1sen!2sph!4v1731716932074!5m2!1sen!2sph" width="440" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    </div>
+                  <div class="col-lg-7 p-4">
+                    <div style="padding: 3rem;background: white;">
+
+                   <h2>Contact Us</h2>
+                   <p style="color: #566A7F;">Let's get this conversation started. Tell us a bit about yourself and we'll get in touch as soon as we can.</p>
+                    <div class="row gy-4 mb-3">
+                      <div class="col-lg-6">
+                        <label class="form-label">Your Name</label>
+                          <input type="text" id="name" placeholder="Your Name" required class="form-control">
+                      </div>
+                      <div class="col-lg-6">
+                        <label class="form-label">Your Email</label>
+                          <input type="email" id="email" placeholder="Your Email" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-lg-12">
+                        <label class="form-label">Subject</label>
+                        <input type="text" id="subject" placeholder="Your Subject" required class="form-control">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <div class="col-lg-12">
+                        <label class="form-label">Your Message</label>
+                        <textarea id="message" rows="3" placeholder="Message" class="form-control h-100" required></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12 text-center mt-4">
+                        <button style="width: 100%;" id="btn" class="btn btn-primary pill rounded-pill mt-3" disabled>SEND MESSAGE</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+           </section>
+           <footer>
+            <div style="border-top: 1px solid #000000;" class="row pb-2 pt-2 bg-white">
+              <div class="col-lg-12 text-center">
+                <h6>© Copyright Patrick Cueto Portfolio All Rights Reserved</h4>
+              </div>
+            </div>
+           </footer>
+           <!--/Contact Section -->
+          <!-- Content wrapper -->
+            <!-- / Content -->
+          </div>
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+ 
+    <!-- Page JS -->
+    <script src="assets/js/dashboards-analytics.js"></script>
+    <script src="assets/js/ekko-lightbox-min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="assets/js/js-custom.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script> 
+// Function to create the typing effect
+function typeWriter(text, element, speed) {
+    let index = 0;
+    function type() {
+        if (index < text.length) {
+            element.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, speed);
+        }
+    }
+    type();
+}
+
+// Example usage
+document.addEventListener('DOMContentLoaded', () => {
+    const textToType = "Hello, I am Web Developer";
+    const container = document.getElementById('typing-container');
+    const typingSpeed = 100; // Speed in milliseconds
+
+    typeWriter(textToType, container, typingSpeed);
+});
+
+  </script>
+
+
+<!-- SCRIPT FOR SEND MESSAGE START -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  var btn = document.getElementById('btn');
+
+  // Function to check if all fields are filled
+  function checkFields() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var subject = document.getElementById('subject').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    // Enable the button only if all fields are filled
+    if (name && email && subject && message) {
+      btn.disabled = false;
+    } else {
+      btn.disabled = true;
+    }
+  }
+
+  // Attach input event listeners to all fields
+  document.getElementById('name').addEventListener('input', checkFields);
+  document.getElementById('email').addEventListener('input', checkFields);
+  document.getElementById('subject').addEventListener('input', checkFields);
+  document.getElementById('message').addEventListener('input', checkFields);
+
+  // Button click event
+  btn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var subject = document.getElementById('subject').value;
+    var message = document.getElementById('message').value;
+    var body = 'Name: ' + name + ' <br/> Email: ' + email + ' <br/> Subject: ' + subject + '<br/> Message: ' + message;
+
+    Email.send({
+      SecureToken: "7a9af965-e56f-438d-baf1-42c1e05473d9",
+      To: 'cuetopatrick91@gmail.com',
+      From: "cuetopatrick91@gmail.com",
+      Subject: "contact message",
+      Body: body
+    }).then(function (response) {
+      // Reset input fields
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('subject').value = '';
+      document.getElementById('message').value = '';
+
+      // Disable button again
+      btn.disabled = true;
+
+      // Show the toast
+      showToast();
+    });
+  });
+
+  // Function to show the toast
+  function showToast() {
+    const toast = new bootstrap.Toast(toastLiveExample);
+    toast.show();
+  }
+</script>
+<!-- SCRIPT FOR SEND MESSAGE END -->
+
+
+
+
+
+
+
+
+<!-- JS FOR THE SLIDER CERTIFICATE START -->
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/JavaScript">
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+        freeScroll: true
+    });
+</script>
+
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+
+<script>
+
+    function openModal(src) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        modal.style.display = "block";
+        modalImg.src = src;
+    }
+
+    function closeModal(event) {
+        event.preventDefault(); // Prevent the default action
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+
+</script>
+<!-- JS FOR THE SLIDER CERTIFICATE END -->
+  </body>
+</html>

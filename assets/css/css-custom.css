@@ -1,0 +1,163 @@
+.custom-bg{
+    background-color: #040B14;
+}
+.css-icon-custom {
+    color: #A8A9B4;
+}
+.css-text-aside{
+    
+    color: #A8A9B4;
+}
+.css-bg-iconlist{
+    background-color: #1E242C;
+}
+span a i .css-icon-custom{
+    color: #A8A9B4;
+}
+.css-image-bg-fullscreen{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+
+}
+.css-text-shadow-custom{
+    text-shadow: 4px 7px 14px rgba(0,0,0,0.41);
+}
+ .css-hr-custom{
+    border: 2px solid #000000;
+    width: 60px;
+}
+.css-chevron-color, .custom-icon{
+    color: #000000;
+}
+
+@media (min-width: 320px){
+    .css-image-bg-fullscreen{
+        margin-top: -76px;
+    }
+}
+.resume-border-left::before{
+    content: "";
+    position:absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left:-9;
+    top: 0;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    margin-left: -9px;
+}
+.resume-border-left{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    left: 10;
+    position: relative;
+border-left: 2px solid #000000;
+}
+.resume-border-left ul li{
+    padding-bottom: 10px;
+}
+h6{
+    font-size: 16px;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+h4{
+    font-size: 18px;
+    font-weight: 600;
+}
+.img-custom-transform{
+    position: relative;
+    display: inline-block;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+.img-custom-transform img{
+display: block;
+}
+.overlay-text:hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.img-custom-transform:hover{
+    transition: .5s ease-in-out;
+    border: 2px solid #040B14;
+    z-index: 2;
+}
+.img-custom-transform {
+    transition: transform 0.8s ease-in-out;
+}
+
+.img-custom-transform:hover {
+    animation: bob 2s ease-in-out infinite;
+    /*filter: brightness(1.1) contrast(1.2);*/
+    filter: brightness(0.7) contrast(0.9); /* Darken the image */ 
+}
+
+/* Keyframes for the bobbing motion */
+@keyframes bob {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px */
+    }
+}
+
+.list-group-item{
+    border: none !important;
+}
+#btnmirror:hover{
+    transition: 0.8s;
+    background-color: white!important;
+    color: black !important;
+    border: 1px solid black!important;
+}
+#btnmirror2:hover{
+    transition: 0.8s;
+    background-color: #000000!important;
+    color: white !important;
+    border: 1px solid black!important;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    align-items: center; /* Align vertically */
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
+    border-bottom: none; /* Remove default Bootstrap border */
+}
+
+.nav-tabs .nav-link {
+    margin: 0 10px; /* Add spacing between buttons */
+    padding: 10px 20px; /* Adjust padding for better spacing */
+    border: none; /* Remove default border */
+    background-color: #f8f9fa; /* Optional: Customize background */
+    color: #495057; /* Customize text color */
+    border-radius: 5px; /* Optional: Round the edges */
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #e9ecef; /* Optional: Background color on hover */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #007bff; /* Active tab background color */
+    color: white; /* Active tab text color */
+}
+#nav-tabContent{
+    padding: 0rem!important;
+}
+.nav-tabs .nav-link.active {
+    background-color: black!important;
+    color: white!important;
+}

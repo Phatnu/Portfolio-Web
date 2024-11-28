@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Contact Form -->
+        <div data-aos="fade-up" data-aos-offset="300" data-aos-duration="800" data-aos-easing="ease-in-sine" class="col-lg-4 col-md-12 col-sm-12">
+            <div class="form-container">
+                <p class="contact-form-header">Feel free to contact me</p>
+                <form>
+                    <input class="input-field" type="text" id="name" placeholder="Your Name" required /><br />
+                    <input class="input-field" type="email" id="email" placeholder="Your Email" required /><br />
+                    <input class="input-field" type="text" id="subject" placeholder="Your Subject" required /><br />
+                    <textarea class="input-field" id="message" rows="3" placeholder="Message" required></textarea><br />
+                    <button id="btn" class="submit-button">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            var btn = document.getElementById('btn');
+            btn.addEventListener('click', function (e) {
+                e.preventDefault()
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var subject = document.getElementById('subject').value;
+                var message = document.getElementById('message').value;
+                var body = 'Name: ' + name + ' <br/> Email: ' + email + ' <br/> Subject:' + subject + '<br/> Message:' + message;
+    
+                Email.send({
+                    SecureToken: "7a9af965-e56f-438d-baf1-42c1e05473d9ugxh",
+                    To: 'cuetopatrick91@gmail.com',
+                    From: "cuetopatrick91@gmail.com",
+                    Subject: "contact message",
+                    Body: body
+                }).then(
+                    function (response) {
+                        // Reset input fields
+                        document.getElementById('name').value = '';
+                        document.getElementById('email').value = '';
+                        document.getElementById('subject').value = '';
+                        document.getElementById('message').value = '';
+                        // Show the toast
+                        showToast();
+                    }
+                );
+            });
+            // Function to show the toast
+            function showToast() {
+                const toast = new bootstrap.Toast(toastLiveExample);
+                toast.show();
+            }
+        </script>
+            
+</body>
+</html>
